@@ -74,5 +74,16 @@ For Linux/Mac
 sh bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic NewTopic --from-beginning
 
 
+To store log of zookeeper and kafka log do the following:
+1. cd C:\kafka_2.12-3.5.0\config
+   opne zookeeper.properties file
+   set path to (before that create folder zookeeper-data
+   dataDir=dataDir=C:/kafka_2.12-3.5.0/zookeeper-data
+
+2.  cd C:\kafka_2.12-3.5.0\config
+    open server.properties
+    set path to (before that create folder kafka-log
+    log.dirs=C:/kafka_2.12-3.5.0/kafka-log  
+
 
 
